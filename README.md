@@ -1,6 +1,6 @@
 # SPEL Model
 
-Recurrent predictive-coding model code.
+Sequence Prediction Error Learning (SPEL) model code.
 
 ```text
 environments/    Task rules, stimuli, and episode datasets
