@@ -1,0 +1,14 @@
+numpy
+click
+h5py
+matplotlib
+torch
+seaborn
+pandas
+gymnasium
+tqdm
+wandb
+json5
+python-dotenv
+scipy
+Pillow

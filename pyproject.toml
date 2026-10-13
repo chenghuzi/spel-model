@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spel"
+version = "0.1.0"
+description = "Recurrent predictive-coding models for DPX and numerosity tasks"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+[project.scripts]
+spel = "run:cli"
+
+[tool.setuptools]
+packages = ["environments", "models", "analysis", "visualizations"]
+py-modules = ["paths", "run"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.ruff]
+line-length = 100
+exclude = ["legacy_code", "legacy_artifacts", "artifacts", ".venv"]
+
+[tool.ruff.lint]
+select = ["E9", "F", "I"]

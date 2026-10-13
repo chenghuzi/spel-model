@@ -1,0 +1,29 @@
+# Local environment, credentials, and tool-managed files.
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Local agent instructions and editor settings.
+.agents/
+.vscode/
+AGENTS.md
+STORY.md
+
+# Research inputs, outputs, historical archives, and review records.
+artifacts/
+legacy_code/
+legacy_artifacts/
+refactor_notes/
